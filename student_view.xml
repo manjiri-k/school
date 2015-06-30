@@ -32,13 +32,15 @@
 						<group col="6">
 							<field name="datetime123"/>
 							<field name="marks"/>
-							<field name="description"/>
+							<newline/>
+							<field name="description" />
+							
 						</group>
 						
 						
 						<group col="6">
-							<group colspan="4"><field name="gender"/></group>
-							<group colspan="2"><field name="school_id"/></group>
+							<group colspan="4"><field name="gender" required="1"/></group>
+							<group colspan="2"><field name="school_id" required="1"/></group>
 							<!-- <field name="school_id1"/>  -->
 						</group>
 						
@@ -47,7 +49,7 @@
 						
 						<label for="library"/>
 						<div>
-							<field name="library"/>
+							<field name="library" invisible="1"/>
 						</div>
 					</sheet>    			
     			</form>

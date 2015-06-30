@@ -21,10 +21,10 @@
     			<form string="School Form View">
     				<sheet>
 						<group>
-							<field name="name"/>
-							<field name="cbse"/>
+							<field name="name" readonly="1"/>
+							<field name="cbse" />
 							<field name="icse"/>
-							<field name="school_id" string="School No"/>
+							<field name="school_id" string="School No" required="1"/>
 							<field name="school_courses"/>
 							<field name="students">
 								<form string="Student">
