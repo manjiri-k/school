@@ -2,6 +2,7 @@ from openerp.osv import fields, osv
 
 class student_student(osv.osv):
     _name='student.student'
+    _rec_name="name123"
     
     _columns={'name123':fields.char(string='Name of student',size=20),
               'date123':fields.date(string="Date"),

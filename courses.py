@@ -8,5 +8,5 @@ class courses_courses(osv.osv):
               'assignments':fields.integer(string="Assignments"),
               'attach':fields.binary("Bianry field"),
               'courses_school':fields.many2many('school.school','school_courses_rel','courses_id_rel','school_id_rel',string="List of Courses"),
-              
+              'ref_id': fields.reference('Reference', [('school.school', 'School Object'), ('student.student', 'Student Object')], size=100),
               }

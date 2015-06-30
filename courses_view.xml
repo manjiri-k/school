@@ -25,6 +25,7 @@
 					        <field name="assignments"/>
 					        <field name="courses_school"/>
 					        <field name="attach"/>
+					        <field name="ref_id"/>
 						</group>
 					</sheet>    			
     			</form>
