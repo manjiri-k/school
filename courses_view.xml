@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="courses_courses_tree_view" model="ir.ui.view">
+    		<field name="name">courses.courses.tree.view</field>
+    		<field name="model">courses.courses</field>
+    		<field name="arch" type="xml">
+    			<tree string="courses Tree View">
+					<field name="name"/>
+					<field name="duration"/>
+					<field name="assignments"/>
+    			</tree>
+    		</field>
+    	</record>
+    	
+    	<record id="courses_courses_form_view" model="ir.ui.view">
+    		<field name="name">courses.courses.form.view</field>
+    		<field name="model">courses.courses</field>
+    		<field name="arch" type="xml">
+    			<form string="courses Form View">
+    				<sheet>
+						<group>
+							<field name="name"/>
+							<field name="duration"/>
+					        <field name="assignments"/>
+					        <field name="courses_school"/>
+						</group>
+					</sheet>    			
+    			</form>
+    		</field>
+    	</record>
+    	
+    	
+    	<record id="courses_action_menu" model="ir.actions.act_window">
+            <field name="name">courses</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">courses.courses</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    	
+    	
+    	<menuitem id="courses_menu" parent="school_menuitem" action="courses_action_menu" sequence="10"/>
+    	
+    	
+    	
+    	
+    </data>
+</openerp>

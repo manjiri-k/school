@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="student_student_tree_view" model="ir.ui.view">
+    		<field name="name">student.student.tree.view</field>
+    		<field name="model">student.student</field>
+    		<field name="arch" type="xml">
+    			<tree string="Student Tree View">
+					<field name="name123"/>
+					<field name="school_id"/>
+					<!-- <field name="school_id1"/>  -->
+    			</tree>
+    		</field>
+    	</record>
+    	
+    	<record id="student_student_form_view" model="ir.ui.view">
+    		<field name="name">student.student.form.view</field>
+    		<field name="model">student.student</field>
+    		<field name="arch" type="xml">
+    			<form string="Student Form View">
+    				<sheet>
+						<group>
+							<field name="name123"/>
+							<field name="date123"/>
+							<field name="datetime123"/>
+							<field name="marks"/>
+							<field name="description"/>
+							<field name="gender"/>
+							<field name="school_id"/>
+							<!-- <field name="school_id1"/>  -->
+							<field name="library"/>
+						</group>
+					</sheet>    			
+    			</form>
+    		</field>
+    	</record>
+    	
+    	
+    	<record id="student_action_menu" model="ir.actions.act_window">
+            <field name="name">Student</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">student.student</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    	
+    	
+    	<menuitem id="student_menu" parent="school_menuitem" action="student_action_menu" sequence="2"/>
+    	
+    	
+    	
+    	
+    </data>
+</openerp>

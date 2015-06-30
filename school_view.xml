@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="school_school_tree_view" model="ir.ui.view">
+    		<field name="name">school.school.tree.view</field>
+    		<field name="model">school.school</field>
+    		<field name="arch" type="xml">
+    			<tree string="School Tree View">
+					<field name="name"/>
+					<field name="cbse"/>
+					<field name="icse"/>
+    			</tree>
+    		</field>
+    	</record>
+    	
+    	
+    	<record id="school_school_form_view" model="ir.ui.view">
+    		<field name="name">school.school.form.view</field>
+    		<field name="model">school.school</field>
+    		<field name="arch" type="xml">
+    			<form string="School Form View">
+    				<sheet>
+						<group>
+							<field name="name"/>
+							<field name="cbse"/>
+							<field name="icse"/>
+							<field name="school_id" string="School No"/>
+							<field name="school_courses"/>
+							<field name="students">
+								<form string="Student">
+									<sheet>
+										<group>
+											<field name="name123"/>
+											<field name="date123"/>
+											<field name="datetime123"/>
+											<field name="marks"/>
+											<field name="description"/>
+											<field name="gender"/>
+											
+										</group>
+									</sheet>	
+								</form>
+								<tree string="Student">
+									<field name="name123"/>
+								</tree>
+							</field>
+						</group>
+					</sheet>    			
+    			</form>
+    		</field>
+    	</record>
+    	
+    	
+    	<record id="school_action_menu" model="ir.actions.act_window">
+            <field name="name">School</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">school.school</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    	
+    	
+    	<menuitem id="school_main_menuitem" sequence="300" name="School Main"/>
+    	<menuitem id="school_menuitem" parent="school_main_menuitem" sequence="1" name="School Under main"/>
+    	<menuitem id="school_menu" parent="school_menuitem" action="school_action_menu" sequence="1"/>
+    	
+    	
+    	
+    	
+    </data>
+</openerp>
