@@ -24,6 +24,7 @@
 							<field name="duration"/>
 					        <field name="assignments"/>
 					        <field name="courses_school"/>
+					        <field name="attach"/>
 						</group>
 					</sheet>    			
     			</form>
