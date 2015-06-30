@@ -23,16 +23,20 @@
 							<field name="name123" string="Name of student in a school==============="/>
 							<field name="date123"/>
 						</group>
-						<group>
+						<group col="6">
 							<field name="datetime123"/>
 							<field name="marks"/>
 							<field name="description"/>
 						</group>
-						<group>
-							<field name="gender"/>
-							<field name="school_id"/>
+						
+						
+						<group col="6">
+							<group colspan="4"><field name="gender"/></group>
+							<group colspan="2"><field name="school_id"/></group>
 							<!-- <field name="school_id1"/>  -->
 						</group>
+						
+						
 						
 						<label for="library"/>
 						<div>
