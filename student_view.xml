@@ -20,11 +20,15 @@
     			<form string="Student Form View">
     				<sheet>
 						<group>
-							<field name="name123"/>
+							<field name="name123" string="Name of student in a school==============="/>
 							<field name="date123"/>
+						</group>
+						<group>
 							<field name="datetime123"/>
 							<field name="marks"/>
 							<field name="description"/>
+						</group>
+						<group>
 							<field name="gender"/>
 							<field name="school_id"/>
 							<!-- <field name="school_id1"/>  -->
