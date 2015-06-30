@@ -19,8 +19,14 @@
     		<field name="arch" type="xml">
     			<form string="Student Form View">
     				<sheet>
+						
+						<label for="name123"/>
+						<h1>
+							<field name="name123"/>
+						</h1>
+						
 						<group>
-							<field name="name123" string="Name of student in a school==============="/>
+							
 							<field name="date123"/>
 						</group>
 						<group col="6">
@@ -35,6 +41,7 @@
 							<group colspan="2"><field name="school_id"/></group>
 							<!-- <field name="school_id1"/>  -->
 						</group>
+						
 						
 						
 						
