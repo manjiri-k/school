@@ -32,8 +32,12 @@
 							<field name="gender"/>
 							<field name="school_id"/>
 							<!-- <field name="school_id1"/>  -->
-							<field name="library"/>
 						</group>
+						
+						<label for="library"/>
+						<div>
+							<field name="library"/>
+						</div>
 					</sheet>    			
     			</form>
     		</field>
